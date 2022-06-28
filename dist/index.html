@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-slate-700 flex flex-col  p-4">
+<body class="bg-slate-700 flex flex-col  p-4 gap-5">
     <!-- Category Form -->
     <div class=" container max-w-lg mx-auto ">
         <h2 class="text-slate-400 text-lg font-bold my-4 ">Add New Category</h2>
@@ -18,13 +18,13 @@
             <form class="p-3 ">
                 <div class="flex flex-col gap-3">
                     <label for="Category-title" class="font-semibold"> Category title</label>
-                    <input type="text" name="Category-title" id="" placeholder="Title..." class="font-semibold p-2 w-487 h-10 rounded-lg bg-transparent  border  border-slate-400 text-slate-400 placeholder:p-1">
-                    <label for="" class="font-semibold"> Category Description</label>
-                    <textarea name="Category-Description" class="from-textarea p-2 rounded-lg bg-transparent  border  border-slate-400 text-slate-400 placeholder:p-1"></textarea>
+                    <input type="text" name="Category-title" id="Category-title" placeholder="Title..." class="font-semibold p-2 w-487 h-10 rounded-lg bg-transparent  border  border-slate-400 text-slate-400 placeholder:p-1">
+                    <label for="Category-Description" class="font-semibold"> Category Description</label>
+                    <textarea id="Category-Description" name="Category-Description" class="from-textarea p-2 rounded-lg bg-transparent  border  border-slate-400 text-slate-400 placeholder:p-1"></textarea>
                 </div>
                 <div class=" flex my-4 gap-3">
                     <button class="bg-transparent w-1/2 border border-slate-400 transition duration-150 ease-in-out hover:bg-slate-500  text-slate-900 rounded-lg  font-bold text-xs lg:text-base">Cancel</button>
-                    <button class=" hover:bg-slate-400 transition duration-150 ease-in-out  bg-slate-300 w-1/2 h-10 rounded-lg font-bold text-xs lg:text-base text-slate-700 ">Add
+                    <button type="button" id="btn-add" class=" hover:bg-slate-400 transition duration-150 ease-in-out  bg-slate-300 w-1/2 h-10 rounded-lg font-bold text-xs lg:text-base text-slate-700 ">Add
                         New Category</button>
                 </div>
             </form>
@@ -53,4 +53,39 @@
             </form>
         </div>
     </div>
+    <!-- Product list  -->
+    <div class=" container max-w-lg mx-auto flex flex-col gap-5">
+        <h2 class="text-slate-400 text-lg font-bold my-4 ">Added Product</h2>
+        <div class="flex justify-between items-center">
+            <span class="text-slate-400">folan</span>
+            <div class="flex gap-1 md:gap-3 items-center justify-center">
+                <span class="text-slate-400">1401</span>
+                <span class=" text-slate-400 border border-slate-600 rounded-xl text-sm p-1 md:px-5 md:py-2 md:text-base">Front-end</span>
+                <span class="text-slate-400 border border-slate-600 rounded-full py-1 px-2">10</span>
+                <button class="text-red-500 border border-red-500 text-sm p-1 md:px-5 md:py-2 md:text-base rounded-xl">delete</button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="text-slate-400">folan</span>
+            <div class="flex gap-1 md:gap-3 items-center justify-center">
+                <span class="text-slate-400">1401</span>
+                <span class=" text-slate-400 border border-slate-600 rounded-xl text-sm p-1 md:px-5 md:py-2 md:text-base">Front-end</span>
+                <span class="text-slate-400 border border-slate-600 rounded-full py-1 px-2">10</span>
+                <button class="text-red-500 border border-red-500 text-sm p-1 md:px-5 md:py-2 md:text-base rounded-xl">delete</button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="text-slate-400">folan</span>
+            <div class="flex gap-1 md:gap-3 items-center justify-center">
+                <span class="text-slate-400">1401</span>
+                <span class=" text-slate-400 border border-slate-600 rounded-xl text-sm p-1 md:px-5 md:py-2 md:text-base">Front-end</span>
+                <span class="text-slate-400 border border-slate-600 rounded-full py-1 px-2">10</span>
+                <button class="text-red-500 border border-red-500 text-sm p-1 md:px-5 md:py-2 md:text-base rounded-xl">delete</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js" type="module"></script>
 </body>
+
+</html>
